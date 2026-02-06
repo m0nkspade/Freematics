@@ -86,9 +86,14 @@
 
 #ifndef SERVER_HOST
 // cellular network settings
-#define CELL_APN ""
+#define CELL_APN "hologram"
+
 // Freematics Hub server settings
-#define SERVER_HOST "hub.freematics.com"
+//#define SERVER_HOST "hub.freematics.com"
+/**************************************
+ * My Private Server: 23.145.40.115
+ **************************************/
+#define SERVER_HOST "23.145.40.115"
 #define SERVER_PROTOCOL PROTOCOL_UDP
 #endif
 
@@ -98,7 +103,8 @@
 #define APN_PASSWORD NULL
 
 // HTTPS settings
-#define SERVER_PATH "/hub/api"
+//#define SERVER_PATH "/hub/api" // OLD
+#define SERVER_PATH "/ingest/oneplus"
 
 #if !SERVER_PORT
 #undef SERVER_PORT
@@ -151,10 +157,13 @@
 **************************************/
 #ifndef GNSS
 // change the following line to change GNSS setting
-#define GNSS GNSS_STANDALONE
+ /* Which one do I use */
 #endif
+#define GNSS GNSS_STANDALONE
+// #define GNSS GNSS_CELLULAR
+
 // keeping GNSS power on during standby 
-#define GNSS_ALWAYS_ON 0
+#define GNSS_ALWAYS_ON 1
 // GNSS reset timeout while no signal
 #define GNSS_RESET_TIMEOUT 300 /* seconds */
 
@@ -162,9 +171,9 @@
 * Standby/wakeup
 **************************************/
 // motion threshold for waking up
-#define MOTION_THRESHOLD 0.4f /* vehicle motion threshold in G */
-// engine jumpstart voltage for waking up (when MEMS unavailable) 
-#define JUMPSTART_VOLTAGE 14 /* V */
+#define MOTION_THRESHOLD 0.2f /* vehicle motion threshold in G */
+// engine jumpstart voltage for waking up 
+#define JUMPSTART_VOLTAGE 13.3 /* V */
 // reset device after waking up
 #define RESET_AFTER_WAKEUP 1
 

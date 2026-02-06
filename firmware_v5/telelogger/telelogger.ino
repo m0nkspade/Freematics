@@ -141,6 +141,18 @@ protected:
 
 OBD obd;
 
+static float readVehicleVoltage()
+{
+  if (sys.devType > 12) {
+    return (float)(analogRead(A0) * 45) / 4095;
+  }
+#if ENABLE_OBD
+  return obd.getVoltage();
+#else
+  return 0;
+#endif
+}
+
 MEMS_I2C* mems = 0;
 
 #if STORAGE == STORAGE_SPIFFS
@@ -1097,11 +1109,31 @@ void standby()
   obd.enterLowPowerMode();
 #if ENABLE_MEMS
   calibrateMEMS();
-  waitMotion(-1);
+  uint32_t lastVoltageCheck = 0;
+  float lastVoltage = batteryVoltage;
+  if (lastVoltage <= 0) {
+    lastVoltage = readVehicleVoltage();
+  }
+  for (;;) {
+    if (!state.check(STATE_STANDBY)) break;
+    if (waitMotion(1000)) break;
+    processBLE(0);
+    uint32_t now = millis();
+    if (now - lastVoltageCheck >= 5000) {
+      lastVoltageCheck = now;
+      float v = readVehicleVoltage();
+      if (v > 0) {
+        if (lastVoltage < JUMPSTART_VOLTAGE && v >= JUMPSTART_VOLTAGE) {
+          break;
+        }
+        lastVoltage = v;
+      }
+    }
+  }
 #elif ENABLE_OBD
   do {
     delay(5000);
-  } while (obd.getVoltage() < JUMPSTART_VOLTAGE);
+  } while (readVehicleVoltage() < JUMPSTART_VOLTAGE);
 #else
   delay(5000);
 #endif
@@ -1375,6 +1407,10 @@ void setup()
 #endif
   // initialize USB serial
   Serial.begin(115200);
+  Serial.println("===TELELOGGER CUSTOM BUILD: ===");
+  Serial.printf("Build: %s %s\n", __DATE__, __TIME__);
+  Serial.printf("Source: %s:%d\n", __FILE__, __LINE__);
+
 
   // init LED pin
 #ifdef PIN_LED
