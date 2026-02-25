@@ -1,4 +1,11 @@
 /******************************************************************************
+* Copyright (c) 2026 Zunicor LLC. All rights reserved.
+*
+* This software is proprietary and confidential. Unauthorized copying,
+* distribution, or modification of this file, via any medium, is strictly
+* prohibited.
+******************************************************************************/
+/******************************************************************************
 * HTTPS testing sketch for Freematics ONE+ with SIM5360
 * https://freematics.com/products/freematics-one-plus/
 * Developed by Stanley Huang, distributed under BSD license

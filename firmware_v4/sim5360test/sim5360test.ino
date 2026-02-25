@@ -1,4 +1,11 @@
 /******************************************************************************
+* Copyright (c) 2026 Zunicor LLC. All rights reserved.
+*
+* This software is proprietary and confidential. Unauthorized copying,
+* distribution, or modification of this file, via any medium, is strictly
+* prohibited.
+******************************************************************************/
+/******************************************************************************
   Sample testing sketch for SIM5360 (WCDMA/GSM) module in Freematics ONE
   Developed by Stanley Huang, distributed under BSD license
   Visit http://freematics.com/products/freematics-one for hardware information

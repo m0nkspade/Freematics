@@ -1,3 +1,10 @@
+/******************************************************************************
+* Copyright (c) 2026 Zunicor LLC. All rights reserved.
+*
+* This software is proprietary and confidential. Unauthorized copying,
+* distribution, or modification of this file, via any medium, is strictly
+* prohibited.
+******************************************************************************/
 /*************************************************************************
 * Testing sketch for Freematics OBD-II UART Adapter V2.1
 * Reads and prints motion sensor data and computed orientation data

@@ -1,3 +1,10 @@
+/******************************************************************************
+* Copyright (c) 2026 Zunicor LLC. All rights reserved.
+*
+* This software is proprietary and confidential. Unauthorized copying,
+* distribution, or modification of this file, via any medium, is strictly
+* prohibited.
+******************************************************************************/
 /*************************************************************************
 * Simple OBD Data Display
 * Works with Freematics Esprit ESP32 board with SH1106 128*64 I2C OLED and

@@ -1,3 +1,10 @@
+/******************************************************************************
+* Copyright (c) 2026 Zunicor LLC. All rights reserved.
+*
+* This software is proprietary and confidential. Unauthorized copying,
+* distribution, or modification of this file, via any medium, is strictly
+* prohibited.
+******************************************************************************/
 typedef enum {
     LOG_TYPE_DEFAULT = 0,
     LOG_TYPE_0_60,

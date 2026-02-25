@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2026 Zunicor LLC. All rights reserved.
+ *
+ * This software is proprietary and confidential. Unauthorized copying,
+ * distribution, or modification of this file, via any medium, is strictly
+ * prohibited.
+ */
 const EVENT_LOGIN = 1;
 const EVENT_LOGOUT = 2;
 const EVENT_SYNC = 3;

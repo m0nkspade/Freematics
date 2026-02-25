@@ -1,4 +1,11 @@
 /******************************************************************************
+* Copyright (c) 2026 Zunicor LLC. All rights reserved.
+*
+* This software is proprietary and confidential. Unauthorized copying,
+* distribution, or modification of this file, via any medium, is strictly
+* prohibited.
+******************************************************************************/
+/******************************************************************************
 * Garden Controller based on Freematics Esprit ESP32 development board
 * Distributed under BSD license
 * Developed by Stanley Huang stanley@freematics.com.au

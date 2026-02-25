@@ -1,3 +1,10 @@
+/******************************************************************************
+* Copyright (c) 2026 Zunicor LLC. All rights reserved.
+*
+* This software is proprietary and confidential. Unauthorized copying,
+* distribution, or modification of this file, via any medium, is strictly
+* prohibited.
+******************************************************************************/
 #define MEMS_DISABLED 0
 #define MEMS_ACC 1
 #define MEMS_9DOF 2

@@ -1,3 +1,10 @@
+/******************************************************************************
+* Copyright (c) 2026 Zunicor LLC. All rights reserved.
+*
+* This software is proprietary and confidential. Unauthorized copying,
+* distribution, or modification of this file, via any medium, is strictly
+* prohibited.
+******************************************************************************/
  /*******************************************************************
 * Process Platform Independent Layer
 * Copyright (c) 2005-06 Stanley Huang <stanleyhuangyc@gmail.com>

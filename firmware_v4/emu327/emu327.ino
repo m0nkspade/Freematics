@@ -1,3 +1,10 @@
+/******************************************************************************
+* Copyright (c) 2026 Zunicor LLC. All rights reserved.
+*
+* This software is proprietary and confidential. Unauthorized copying,
+* distribution, or modification of this file, via any medium, is strictly
+* prohibited.
+******************************************************************************/
 /*************************************************************************
 * This sketch redirects serial UART I/O to OBD chip via SPI
 * to emulate a ELM327 device (with extensions) by Freematics ONE

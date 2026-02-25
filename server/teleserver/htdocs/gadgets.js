@@ -1,10 +1,17 @@
+/*
+ * Copyright (c) 2026 Zunicor LLC. All rights reserved.
+ *
+ * This software is proprietary and confidential. Unauthorized copying,
+ * distribution, or modification of this file, via any medium, is strictly
+ * prohibited.
+ */
 var chartData = [
     [PID.SPEED, "Vehicle Speed", "#808080", "km/h", "Speed (km/h)", 100],
     [PID.RPM, "Engine RPM", "#404040", "rpm", "RPM", 100],
     [PID.ENGINE_LOAD, "Engine Load", "#808080", "%", "Engine (%)", 100],
     [PID.THROTTLE, "Throttle Pos.", "#808080", "%", "Throttle (%)", 100],
-    [PID.COOLANT_TEMP, "Coolant Temp.", "#808080", "¡ãC", "Coolant (¡ãC)", 120],
-    [PID.INTAKE_TEMP, "Intake Air Temp.", "#808080", "¡ãC", "Intake Air (¡ãC)", 100],
+    [PID.COOLANT_TEMP, "Coolant Temp.", "#808080", "ï¿½ï¿½C", "Coolant (ï¿½ï¿½C)", 120],
+    [PID.INTAKE_TEMP, "Intake Air Temp.", "#808080", "ï¿½ï¿½C", "Intake Air (ï¿½ï¿½C)", 100],
     [PID.ACC, "G-force", "#404040", "g", "G-force", 100],
     [PID.BATTERY_VOLTAGE, "Battery Voltage", "#808080", "V", "Voltage (V)", 100]
 ];

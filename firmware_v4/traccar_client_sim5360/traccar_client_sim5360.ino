@@ -1,4 +1,11 @@
 /******************************************************************************
+* Copyright (c) 2026 Zunicor LLC. All rights reserved.
+*
+* This software is proprietary and confidential. Unauthorized copying,
+* distribution, or modification of this file, via any medium, is strictly
+* prohibited.
+******************************************************************************/
+/******************************************************************************
 * A traccar client for Freematics ONE with SIM5360 (cellular and GNSS)
 * Written by Stanley Huang <stanley@freematics.com.au>
 * Distributed under BSD license

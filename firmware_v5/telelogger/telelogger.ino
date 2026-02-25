@@ -1,4 +1,11 @@
 /******************************************************************************
+* Copyright (c) 2026 Zunicor LLC. All rights reserved.
+*
+* This software is proprietary and confidential. Unauthorized copying,
+* distribution, or modification of this file, via any medium, is strictly
+* prohibited.
+******************************************************************************/
+/******************************************************************************
 * Arduino sketch of a vehicle data data logger and telemeter for Freematics Hub
 * Works with Freematics ONE+ Model A and Model B
 * Developed by Stanley Huang <stanley@freematics.com.au>

@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2026 Zunicor LLC. All rights reserved.
+ *
+ * This software is proprietary and confidential. Unauthorized copying,
+ * distribution, or modification of this file, via any medium, is strictly
+ * prohibited.
+ */
 const ROLLBACK_TIME = 120000;
 const ROLLBACK_TIME_PARKED = 3600000;
 const LIST_REFRESH_INTERVAL = 500;

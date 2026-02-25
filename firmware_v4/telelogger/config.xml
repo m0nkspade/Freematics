@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2026 Zunicor LLC. All rights reserved.
+
+  This software is proprietary and confidential. Unauthorized copying,
+  distribution, or modification of this file, via any medium, is strictly
+  prohibited.
+-->
 <config>
 <target name="Freematics ONE" board="uno" monitor_baudrate="115200">
   <define name="Enable Motion Sensor" type="bool" const="MEMS_MODE" default="true"/>

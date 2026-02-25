@@ -1,3 +1,10 @@
+/******************************************************************************
+* Copyright (c) 2026 Zunicor LLC. All rights reserved.
+*
+* This software is proprietary and confidential. Unauthorized copying,
+* distribution, or modification of this file, via any medium, is strictly
+* prohibited.
+******************************************************************************/
 /*************************************************************************
 * Freematics Hub Client implementations for ESP8266-AT, SIM800, SIM5360
 * Distributed under BSD license
