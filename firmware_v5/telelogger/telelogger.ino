@@ -347,12 +347,6 @@ bool processGPS(CBuffer* buffer)
     }
     return false;
   }
-  if ((lastGPSLat || lastGPSLng) && (abs(gd->lat - lastGPSLat) > 0.001 || abs(gd->lng - lastGPSLng) > 0.001)) {
-    // invalid coordinates data
-    lastGPSLat = 0;
-    lastGPSLng = 0;
-    return false;
-  }
   lastGPSLat = gd->lat;
   lastGPSLng = gd->lng;
 
