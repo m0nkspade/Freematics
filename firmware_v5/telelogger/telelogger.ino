@@ -777,6 +777,15 @@ void process()
     }
   }
   if (stationary) {
+    // Check RPM before entering standby — engine running means not truly idle
+    int rpm = obdData[1].value; // PID_RPM
+    if (rpm > 0) {
+      lastMotionTime = millis();
+      stationary = false;
+      Serial.println("Engine running (RPM > 0), staying active");
+    }
+  }
+  if (stationary) {
     // stationery timeout
     Serial.print("Stationary for ");
     Serial.print(motionless);
